@@ -1,4 +1,4 @@
-<!-- # Python Study 2023 Workspace
+# Python Study 2023 Workspace
 
 Welcome to the Python Study 2023 workspace! This workspace has been created for you and your fellow students in the class to collaborate and learn. Here's a brief overview of the contents of this workspace:
 
@@ -42,4 +42,3 @@ For any questions, assistance, or discussions, please use the workspace's commun
 
 Happy learning!
 
- -->
