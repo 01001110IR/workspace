@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Upload Example</title>
+
+</head>
+<body>
+  <h1><strong>this is the code of this page </strong></h1>
+  <input type="file" id="fileInput" style="display: none;">
+  <button id="uploadButton">Upload File</button>
+  <div id="fileContainer"></div>
+  <script>
+    const fileInput = document.getElementById('fileInput');
+    const uploadButton = document.getElementById('uploadButton');
+    const fileContainer = document.getElementById('fileContainer');
+
+    uploadButton.addEventListener('click', () => {
+      fileInput.click();
+    });
+
+    fileInput.addEventListener('change', (event) => {
+      const selectedFile = event.target.files[0];
+      if (selectedFile) {
+        if (selectedFile.type.startsWith('image/') || selectedFile.type === 'application/pdf' || selectedFile.type === 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet') {
+          const iframe = document.createElement('iframe');
+          iframe.src = URL.createObjectURL(selectedFile);
+          iframe.style.width = '80%';
+          iframe.style.height = '1000px'; // כאן אתה מגביל את הגובה ל-700px
+          fileContainer.appendChild(iframe);
+        } else {
+          alert('Unsupported file type.');
+        }
+      }
+    });
+  </script>
+  <img src="upload page .png" alt="" width="1500px" height="800px">
+</body>
+
+</html>

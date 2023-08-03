@@ -1,0 +1,38 @@
+ 
+header{
+      background-color: black;
+}
+
+
+main{border-radius: 100px;
+      background-color: rgb(101, 49, 101);
+      width: 2000px;
+      font-size: small;
+      height: 50px;
+
+}
+button{
+      border-radius: 10px;
+}
+
+footer{
+      background-color: black;
+      border-color: black;
+}
+#connect{
+      background-color: rgb(108, 13, 92);
+      font-size:20px;
+      padding: 12px;
+      margin: 1px;
+      
+}
+#road{
+      font-family: serif;
+      color: rgb(111, 54, 255);
+}
+#Eyal{
+      font-family: serif;
+      font-size: 30px;
+      font-style: italic;
+      color: rgb(218, 156, 156);
+}

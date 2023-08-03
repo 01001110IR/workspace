@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tags Example</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        h1 {
+            font-size: 60px;
+            color: blueviolet;
+        }
+
+        h2 {
+            font-size: 30px;
+            color: rgb(203, 174, 231);
+        }
+
+        p {
+            font-size: 25px;
+            font-family: monospace;
+            color: rgb(202, 118, 7);
+            font-style: oblique;
+            font-weight: lighter;
+        }
+
+        code {
+            color: chartreuse;
+        }
+
+        hr {
+            height: 1px;
+            background-color: rgb(234, 10, 10);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>HTML Tags Example</h1>
+    <p><span style="color: blueviolet;"> In this example, you'll learn about various HTML tags and their usage:</span></p>
+    <hr>
+
+    <h2><code>&lt;h1&gt; - &lt;h6&gt;</code> (Headings)</h2>
+    <p>Headings are used to define headings for sections. There are six levels, with <code>&lt;h1&gt;</code> being the
+        highest and most important. Headings provide structure and hierarchy to your content.</p>
+    <hr>
+
+    <h2><code>&lt;p&gt;</code> (Paragraph)</h2>
+    <p>The <code>&lt;p&gt;</code> tag is used to define a paragraph of text. Paragraphs are a fundamental way to
+        organize and present textual content.</p>
+    <hr>
+
+    <h2><code>&lt;a&gt;</code> (Anchor)</h2>
+    <p>The <code>&lt;a&gt;</code> tag is used to create hyperlinks to other web pages or resources. Hyperlinks allow
+        users to navigate between different pages or websites. For example, <a
+            href="http://127.0.0.1:5500/htmlpage2.html">Click here to display the code for this page. </a>.</p>
+    <hr>
+
+    <h2><code>&lt;img&gt;</code> (Image)</h2>
+    <p>The <code>&lt;img&gt;</code> tag is used to display images on a web page. Images enhance the visual appeal of
+        your content and can convey information more effectively. For example, <img src="https://picsum.photos/200/300"
+            alt="An example image" width="150" height="100" />.</p>
+    <hr>
+
+    <h2><code>&lt;ul&gt;</code> / <code>&lt;ol&gt;</code> / <code>&lt;li&gt;</code> (Lists)</h2>
+    <p>The <code>&lt;ul&gt;</code> tag is used to create an unordered list, <code>&lt;ol&gt;</code> for an ordered
+        list, and <code>&lt;li&gt;</code> for list items:</p>
+    <ul>
+        <li>Unordered Item 1</li>
+        <li>Unordered Item 2</li>
+        <li>Unordered Item 3</li>
+    </ul>
+    <ol>
+        <li>Ordered Item 1</li>
+        <li>Ordered Item 2</li>
+        <li>Ordered Item 3</li>
+    </ol>
+    <p>Lists provide a structured way to present items or information in a sequence.</p>
+    <hr>
+
+    <h2><code>&lt;table&gt;</code> / <code>&lt;tr&gt;</code> / <code>&lt;td&gt;</code> (Tables)</h2>
+    <p>The <code>&lt;table&gt;</code> tag is used to create a table, <code>&lt;tr&gt;</code> for table rows, and
+        <code>&lt;td&gt;</code> for table data cells:</p>
+    <table border="1">
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+        </tr>
+    </table>
+    <p>Tables are used to organize and display tabular data in rows and columns.</p>
+    <hr>
+
+    <h2><code>&lt;form&gt;</code> / <code>&lt;input&gt;</code> / <code>&lt;button&gt;</code> (Forms)</h2>
+    <p>The <code>&lt;form&gt;</code> tag is used to create a form, <code>&lt;input&gt;</code> for input fields, and
+        <code>&lt;button&gt;</code> for buttons:</p>
+    <form action="submit.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age"><br><br>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <p>Forms allow users to input data and interact with a website. Various input types, such as text, email, and
+        number, provide different ways for users to submit information.</p>
+
+    <h2><code>&lt;header&gt;</code> / <code>&lt;footer&gt;</code></h2>
+    <header>
+        <h1>This is the Header</h1>
+    </header>
+    <footer>
+        <p>This is the Footer</p>
+    </footer>
+
+    <h2><code>&lt;nav&gt;</code></h2>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h2><code>&lt;main&gt;</code></h2>
+    <main>
+        <h1>Main Content</h1>
+        <p>This is the main content of the page.</p>
+    </main>
+
+    <h2><code>&lt;article&gt;</code> / <code>&lt;section&gt;</code></h2>
+    <article>
+        <h1>Article Title</h1>
+        <p>This is an article about something interesting.</p>
+    </article>
+    <section>
+        <h2>Section Title</h2>
+        <p>This is a section of the article.</p>
+    </section>
+
+    <h2><code>&lt;time&gt;</code></h2>
+    <p>The <code>&lt;time&gt;</code> tag is used to represent a specific period in time or a date:</p>
+    <p>Join us on <time datetime="2023-08-03">August 3rd, 2023</time> for a special event.</p>
+
+    <h2><code>&lt;figure&gt;</code> / <code>&lt;figcaption&gt;</code></h2>
+    <figure>
+        <img src="https://picsum.photos/100/150" alt="A beautiful image">
+        <figcaption>This is a caption for the image.</figcaption>
+    </figure>
+
+    <h2><code>&lt;details&gt;</code> / <code>&lt;summary&gt;</code></h2>
+    <details>
+        <summary>Click to reveal more information</summary>
+        <p>This is additional information that can be revealed when the user clicks on the summary.</p>
+    </details>
+
+    <h2><code>&lt;datalist&gt;</code> / <code>&lt;meter&gt;</code> / <code>&lt;progress&gt;</code></h2>
+    <p>Here's a datalist of options:</p>
+    <input list="fruits" name="fruit">
+    <datalist id="fruits">
+        <option value="Apple">
+        <option value="Banana">
+        <option value="Orange">
+        <option value="Mango">
+    </datalist>
+    <p>Here's a meter to show progress:</p>
+    <meter value="75" min="0" max="100">75%</meter>
+    <p>Here's a progress bar:</p>
+    <progress value="50" max="100"></progress>
+
+    <h2><code>&lt;fieldset&gt;</code> / <code>&lt;legend&gt;</code></h2>
+    <form>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </fieldset>
+    </form>
+
+    <h2><code>&lt;optgroup&gt;</code></h2>
+    <label for="fruits">Choose a fruit:</label>
+    <select id="fruits" name="fruits">
+        <optgroup label="Citrus">
+            <option value="Orange">Orange</option>
+            <option value="Grapefruit">Grapefruit</option>
+            <option value="Lemon">Lemon</option>
+        </optgroup>
+        <optgroup label="Berry">
+            <option value="Strawberry">Strawberry</option>
+            <option value="Blueberry">Blueberry</option>
+            <option value="Raspberry">Raspberry</option>
+        </optgroup>
+    </select>
+
+    <h2><code>&lt;button&gt;</code></h2>
+    <button>Click Me</button>
+
+    <h2><code>&lt;base&gt;</code></h2>
+    <base href="https://www.example.com/" target="_blank">
+
+    <h2><code>&lt;style&gt;</code></h2>
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+        }
+    </style>
+
+    <h2><code>&lt;blockquote&gt;</code></h2>
+    <blockquote>
+        <p>This is a blockquote. It's used to highlight a quote from a source.</p>
+    </blockquote>
+
+    <h2><code>&lt;sup&gt;</code> / <code>&lt;sub&gt;</code></h2>
+    <p>This is <sup>superscript</sup> and this is <sub>subscript</sub> text.</p>
+
+    <h2><code>&lt;hr&gt;</code></h2>
+    <p>Here is a horizontal rule:</p>
+    <hr>
+
+    <h2><code>&lt;pre&gt;</code> / <code>&lt;code&gt;</code></h2>
+    <p>Here's an example of preformatted text:</p>
+    <pre><code>
+<html>
+    <head>
+        <title>Preformatted Code</title>
+    </head>
+    <body>
+        <h1>Hello, world!</h1>
+    </body>
+</html>
+    </code></pre>
+
+    <h2><code>&lt;kbd&gt;</code></h2>
+    <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy the selected text.</p>
+
+    <h2><code>&lt;area&gt;</code> / <code>&lt;map&gt;</code></h2>
+    <img src="image.jpg" alt="World Map" usemap="#worldmap">
+    <map name="worldmap">
+        <area shape="rect" coords="34,44,270,350" alt="North America" href="north_america.html">
+        <area shape="circle" coords="337,300,75" alt="Australia" href="australia.html">
+        <area shape="poly" coords="23,19,128,165,230,25" alt="Europe" href="europe.html">
+    </map>
+
+    <h2><code>&lt;slot&gt;</code></h2>
+    <div class="card">
+        <h2>Card Title</h2>
+        <p>This is some content in the card.</p>
+        <slot></slot>
+    </div>
+
+    <h2><code>&lt;noscript&gt;</code></h2>
+    <noscript>
+        <p>This page requires JavaScript to function properly.</p>
+    </noscript>
+
+</body>
+
+</html>
